@@ -1,7 +1,8 @@
 <!-- 导航开始 -->
-<scroll-view scroll-x="true" style="width: 100%;white-space:nowrap;margin-bottom:1rpx;">
+
+<scroll-view scroll-x="true" class="navbar" >
   <view class="tab">
-    <view class="tab-nav" style='font-size:12px'>
+    <view class="tab-nav" style='font-size:24rpx'>
       <view  wx:for="{{tabnav.tabitem}}" bindtap="setTab" class="item {{currentTab==index ? 'active' : ''}}"  data-tabindex="{{index}}" style="{{index>4?'border-bottom: 1rpx dotted #ddd;':''}}">{{item.text}}</view>
       <view >
       <view class="tab-line" style="width:{{100/tabnav.tabnum}}%;transform:translateX({{100*showtab}}%);"></view>
@@ -10,19 +11,8 @@
   </view>
 </scroll-view>
 <!-- 导航结束 -->
-<view class="container">
-  <view class="page-body">
-    <view class="page-section page-section-spacing swiper">
-      <swiper
-        indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}"
-        interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" next-margin="{{nextMargin}}px">
-        <block wx:for="{{imgUrls}}" wx:key="*this">
-          <swiper-item>
-            <!-- <view class="swiper-item {{item}}"></view> -->
-             <image src="{{item}}" class="slide-image " mode="widthFix" />
-          </swiper-item>
-        </block>
-      </swiper>
-    </view>
+<view class="page-body">
+  <view class="page-section page-section-gap">
+    <web-view src=""></web-view>
   </view>
 </view>

@@ -1,3 +1,14 @@
+.navbar{
+  width: 100%;
+  white-space:nowrap;
+  background:#fff;
+  margin-bottom:1rpx;
+  position:fixed;
+  top:0rpx;
+  z-index: 100;
+  border-top:1rpx solid #ECECEC;
+  border-bottom:1rpx solid #ECECEC;
+}
 .tab{
 	display: flex;
 	flex-direction: column;
@@ -37,3 +48,9 @@
 .tab-nav .item.active{ 
  color:#D44B44; 
 } 
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}

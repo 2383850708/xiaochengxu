@@ -1,5 +1,9 @@
-@import "navbar.wxss";
+
 .container{
+  padding:0px;
+  margin-top:82rpx;
+}
+.page-body{
   padding:0px;
   margin-top:82rpx;
 }
