@@ -1,0 +1,43 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+   "navigationBarBackgroundColor":"#fff",
+    "navigationBarTitleText": "实惠网",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "color":"#B4B4B4",
+    "selectedColor":"#E12D24",
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "text":"首页",
+        "iconPath":"pages/public/images/shouye_first.png",
+        "selectedIconPath":"pages/public/images/shouye.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "搜索",
+        "iconPath": "pages/public/images/sousuo_first.png",
+        "selectedIconPath": "pages/public/images/sousuo.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "购物车",
+        "iconPath": "pages/public/images/gouwuche_first.png",
+        "selectedIconPath": "pages/public/images/gouwuche.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "个人中心",
+        "iconPath": "pages/public/images/wode_first.png",
+        "selectedIconPath": "pages/public/images/wode.png"
+      }
+
+    ]
+  }
+}
