@@ -1,5 +1,20 @@
+var common = require('../index_common/index_common.js')
 Page({
   data: {
+    imgUrls: [
+      '../public/images/tooopen_sy_175833047715.jpg',
+      '../public/images/tooopen_sy_175833047715.jpg',
+      '../public/images/tooopen_sy_175833047715.jpg'
+    ],
+    indicatorDots: true,
+    vertical: false,
+    autoplay: true,
+    circular: true,
+    interval: 5000,
+    duration: 500,
+    previousMargin: 0,
+    nextMargin: 0,
+    navbarActiveIndex: 0,
     showtab: 0,  //顶部选项卡索引
     tabnav: {
       tabnum: 5,
@@ -31,39 +46,39 @@ Page({
         {
           "id": 6,
           "text": "食品"
-        },
-        {
-          "id": 7,
-          "text": "食品"
-        },
-        {
-          "id": 8,
-          "text": "食品"
-        },
-        {
-          "id": 9,
-          "text": "食品"
-        },
-        {
-          "id": 10,
-          "text": "食品"
         }
       ]
     },
     currentTab: 0,
     productList: []
+    
 
    
   },
   onLoad: function () {
+    
+    this.setData({
+      imageInfo: common.imageInfo
+    })
   },
   setTab: function (e) {
+    
     const edata = e.currentTarget.dataset;
-   
+    const key = e.currentTarget.dataset.tabindex;
+    if (key > 0) {
+      var hid_one = 'none';
+      var hid_two = 'block';  
+    }
+    else 
+    {
+      var hid_one = 'blcok';
+      var hid_two = 'none';
+    }
     this.setData({
       showtab: edata.tabindex,
-      currentTab: e.currentTarget.dataset.tabindex
-     
+      currentTab: key,
+      hidden_one: hid_one,
+      hidden_two: hid_two
 
     })
   }

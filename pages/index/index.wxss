@@ -1,7 +1,15 @@
 @import "navbar.wxss";
 .container{
   padding:0px;
-  margin-top:82rpx;
+  margin-top:85rpx;
+
+}
+
+.one{
+  display: block;
+}
+.two{
+  display: none;
 }
 
 page {
