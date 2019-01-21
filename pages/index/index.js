@@ -1,20 +1,7 @@
-var common = require('../index_common/index_common.js')
+var common = require('./hot-template/hot.js');
+var categoryList = require('./hot-category-template/category.js');
 Page({
   data: {
-    imgUrls: [
-      '../public/images/tooopen_sy_175833047715.jpg',
-      '../public/images/tooopen_sy_175833047715.jpg',
-      '../public/images/tooopen_sy_175833047715.jpg'
-    ],
-    indicatorDots: true,
-    vertical: false,
-    autoplay: true,
-    circular: true,
-    interval: 5000,
-    duration: 500,
-    previousMargin: 0,
-    nextMargin: 0,
-    navbarActiveIndex: 0,
     showtab: 0,  //顶部选项卡索引
     tabnav: {
       tabnum: 5,
@@ -50,7 +37,8 @@ Page({
       ]
     },
     currentTab: 0,
-    productList: []
+    productList: [],
+   
     
 
    
@@ -58,7 +46,9 @@ Page({
   onLoad: function () {
     
     this.setData({
-      imageInfo: common.imageInfo
+      imageInfo: common.imageInfo,
+      categoryList: categoryList.categoryList
+
     })
   },
   setTab: function (e) {

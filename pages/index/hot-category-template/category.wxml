@@ -1,0 +1,84 @@
+<template name="category">
+
+  <block wx:for="{{categoryList}}" wx:key="*this"  wx:for-item="item">
+    <view class="category-top "  style="flex-direction:row;display: flex;margin-top:30rpx;justify-content:space-around">
+      <block wx:for="{{item}}">
+        <view   >
+          <view style="width:90rpx;height:90rpx;margin:0px auto;">
+            <image src="{{item.imgpath}}"  style="width:100%;height:100%" />
+          </view>
+          <view  class="category-font">{{item.title}}</view>
+        </view>
+      </block>
+    </view>
+  </block>
+
+  <!-- <view class="category-top "  style="flex-direction:row;display: flex;margin-top:30rpx;justify-content:space-around">
+        <view   >
+          <view style="width:90rpx;height:90rpx;margin:0px auto">
+            <image src="../public/images/category/icon-test.png"  style="width:100%;height:100%" />
+          </view>
+          <view  class="category-font">限时秒杀</view>
+        </view>
+        <view   >
+          <view style="width:90rpx;height:90rpx;margin:0px auto">
+            <image src="../public/images/category/qingcangshuaihuo.png"  style="width:100%;height:100%" />
+          </view>
+          <view  class="category-font">断码清仓</view>
+        </view>
+        <view   >
+          <view style="width:90rpx;height:90rpx;margin:0px auto">
+            <image src="../public/images/category/icon1460191810156.png"  style="width:100%;height:100%" />
+          </view>
+          <view  class="category-font">品牌馆</view>
+        </view>
+        <view   >
+          <view style="width:90rpx;height:90rpx;margin:0px auto">
+            <image src="../public/images/category/shouji.png"  style="width:100%;height:100%" />
+          </view>
+          <view  class="category-font">手机充值</view>
+        </view>
+        <view  >
+          <view style="width:90rpx;height:90rpx;margin:0px auto">
+            <image src="../public/images/category/temai.png"  style="width:100%;height:100%" />
+          </view>
+          <view  class="category-font">9快9特卖</view>
+        </view>
+     
+      </view>
+
+      <view class="category-top "  style="flex-direction:row;display: flex;margin-top:30rpx;justify-content:space-around">
+        <view   >
+          <view style="width:90rpx;height:90rpx;margin:0px auto">
+            <image src="../public/images/category/lingjuandianjihou.png"  style="width:100%;height:100%" />
+          </view>
+          <view  class="category-font">砍价免费拿</view>
+        </view>
+        <view   >
+          <view style="width:90rpx;height:90rpx;margin:0px auto">
+            <image src="../public/images/category/dianqicheng.png"  style="width:100%;height:100%" />
+          </view>
+          <view  class="category-font">电器城</view>
+        </view>
+        <view   >
+          <view style="width:90rpx;height:90rpx;margin:0px auto">
+            <image src="../public/images/category/icon-test1.png"  style="width:100%;height:100%" />
+          </view>
+          <view  class="category-font">果多多</view>
+        </view>
+        <view   >
+          <view style="width:90rpx;height:90rpx;margin:0px auto">
+            <image src="../public/images/category/aiguangjie-.png"  style="width:100%;height:100%" />
+          </view>
+          <view  class="category-font">爱逛街</view>
+        </view>
+        <view   >
+          <view style="width:90rpx;height:90rpx;margin:0px auto">
+            <image src="../public/images/category/chaoshi.png"  style="width:100%;height:100%" />
+          </view>
+          <view  class="category-font">食品超市</view>
+        </view>
+        
+
+      </view> -->
+</template>

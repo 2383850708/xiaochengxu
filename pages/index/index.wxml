@@ -13,20 +13,18 @@
 <!-- 导航结束 -->
 
 <view class="one container" style="display:{{hidden_one}}" >
-{{imageInfo.interval}}
-  <!-- <view class="page-body">
-    <view class="page-section page-section-spacing swiper">
-      <swiper
-        indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}"
-        interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" next-margin="{{nextMargin}}px">
-        <block wx:for="{{imgUrls}}" wx:key="*this">
-          <swiper-item>
-             <image src="{{item}}" class="slide-image " mode="widthFix" />
-          </swiper-item>
-        </block>
-      </swiper>
-    </view>
-  </view> -->
+<import src="./hot-template/hot.wxml" />
+<template is="banner" data="{{...imageInfo}}" />
+<swiper class='category'   indicator-active-color="#DE2A1F" >
+    <swiper-item>     
+         <import src="./hot-category-template/category.wxml" />
+         <template is="category" data="{{categoryList}}" />
+    </swiper-item>
+</swiper>
+
+
+
+
 </view>
 
 <view class="two container" style="display:{{hidden_two}}" >
