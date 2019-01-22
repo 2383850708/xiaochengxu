@@ -5,7 +5,7 @@ var imageInfo = {
     '../public/images/tooopen_sy_175833047715.jpg'
   ],
   indicatorDots: true,
-  vertical: false,
+  vertical: true,
   autoplay: true,
   circular: true,
   interval: 5000,

@@ -1,0 +1,20 @@
+<template name="other_category">
+
+  <view style="display: flex;flex-direction: row; flex-wrap: wrap;padding-top:20rpx;background:#fff">
+    <block wx:for="{{otherCategoryList}}"  wx:for-index="idx"  wx:for-item="item">
+      <view style="width:20%;height:100rpx;margin-bottom:40rpx">
+        <view style="width:90rpx;height:90rpx;margin:auto;">
+          <image style="width:100%;height:100%" src="{{item.imgpath}}"/>
+        </view>
+        <view  style="font-size:24rpx;color:#ADADAD;text-align:center;">{{item.title}}</view>
+      </view>
+      </block>
+      <view style="width:20%;height:100rpx;margin-bottom:40rpx">
+        <view style="width:90rpx;height:90rpx;margin:auto;">
+          <image style="width:60rpx;height:60rpx;margin-top:10rpx;margin-left:20rpx" src="../public/images/other-category/gengduo.png"/>
+        </view>
+        <view  style="font-size:24rpx;color:#ADADAD;text-align:center;">查看全部</view>
+      </view>
+    </view>
+   
+</template>  

@@ -1,0 +1,13 @@
+<template name="other_list">
+  <view class="advertisement">广告为</view>
+
+  <!-- 列表开始 -->
+  <view class="other_list">
+    <view style='width:48%;background:#FFFBE6;'>
+      <view style="height:480rpx;">
+       
+      </view>
+    </view>
+    <view style='width:48%;height:200rpx;background:#FFFBE6;'></view>
+  </view>
+</template>

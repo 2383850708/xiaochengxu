@@ -1,5 +1,6 @@
-var common = require('./hot-template/hot.js');
-var categoryList = require('./hot-category-template/category.js');
+// var common = require('./hot-banner-template/banner.js');
+//var categoryList = require('./hot-category-template/category.js');
+//var otherCategoryList = require('./other-category-template/other_category.js');
 Page({
   data: {
     showtab: 0,  //顶部选项卡索引
@@ -46,9 +47,9 @@ Page({
   onLoad: function () {
     
     this.setData({
-      imageInfo: common.imageInfo,
-      categoryList: categoryList.categoryList
-
+      // imageInfo: common.imageInfo,
+      //categoryList: categoryList.categoryList
+      //otherCategoryList: otherCategoryList.otherCategoryList
     })
   },
   setTab: function (e) {

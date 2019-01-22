@@ -1,0 +1,17 @@
+.advertisement{
+  height:200rpx;
+  margin-top:100rpx;
+  background:paleturquoise;
+  text-align: center;
+  font-weight: bold;
+}
+.other_list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top:20rpx;
+  background:#fff;
+  justify-content:space-between;
+   
+
+}

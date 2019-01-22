@@ -1,9 +1,9 @@
 <!-- 导航开始 -->
-
+<!-- {{index>4?'border-bottom: 1rpx dotted #ddd;':''}} -->
 <scroll-view scroll-x="true" class="navbar" >
   <view class="tab">
     <view class="tab-nav" style='font-size:24rpx'>
-      <view  wx:for="{{tabnav.tabitem}}" bindtap="setTab"  class="item {{currentTab==index ? 'active' : ''}}"  data-tabindex="{{index}}" style="{{index>4?'border-bottom: 1rpx dotted #ddd;':''}}">{{item.text}}</view>
+      <view  wx:for="{{tabnav.tabitem}}" bindtap="setTab"  class="item {{currentTab==index ? 'active' : ''}}"  data-tabindex="{{index}}" style="">{{item.text}}</view>
       <view >
       <view class="tab-line" style="width:{{100/tabnav.tabnum}}%;transform:translateX({{100*showtab}}%);"></view>
       </view>
@@ -12,22 +12,24 @@
 </scroll-view>
 <!-- 导航结束 -->
 
-<view class="one container" style="display:{{hidden_one}}" >
-<import src="./hot-template/hot.wxml" />
-<template is="banner" data="{{...imageInfo}}" />
-<swiper class='category'   indicator-active-color="#DE2A1F" >
-    <swiper-item>     
-         <import src="./hot-category-template/category.wxml" />
-         <template is="category" data="{{categoryList}}" />
-    </swiper-item>
-</swiper>
+<view class="two container" style="display:{{hidden_two}}" >
+  <!-- <import src="./hot-banner-template/banner.wxml" />
+  <template is="banner" data="{{...imageInfo}}" />
+  <import src="./hot-category-template/category.wxml" />            
+  <template is="category" data="{{categoryList}}" /> -->
+  
+      
 
 
 
 
 </view>
 
-<view class="two container" style="display:{{hidden_two}}" >
-2
+<view class="one container" style="display:{{hidden_one}}" >
+  <!-- <import src="./other-category-template/other_category.wxml"  />
+  <template is="other_category" data="{{otherCategoryList}}" /> -->
+  
+  <import src="./other-list-template/other_list.wxml" />            
+  <template is="other_list"  /> 
 </view>
 

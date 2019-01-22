@@ -1,17 +1,21 @@
 <template name="category">
-
-  <block wx:for="{{categoryList}}" wx:key="*this"  wx:for-item="item">
-    <view class="category-top "  style="flex-direction:row;display: flex;margin-top:30rpx;justify-content:space-around">
-      <block wx:for="{{item}}">
-        <view   >
-          <view style="width:90rpx;height:90rpx;margin:0px auto;">
-            <image src="{{item.imgpath}}"  style="width:100%;height:100%" />
-          </view>
-          <view  class="category-font">{{item.title}}</view>
+  <swiper class='category' indicator-dots="true"  indicator-active-color="#DE2A1F" >
+    <block wx:for="{{categoryList}}"  wx:for-index="idx"  wx:for-item="over">
+      <swiper-item>              
+        <view class="category-top "  style="display: flex;flex-direction: row; flex-wrap: wrap;">
+          <block wx:for="{{over}}"   wx:for-item="item">
+            <view  style="margin-bottom:20rpx;width:20%" >
+              <view style="width:90rpx;height:90rpx;margin:0px auto;">
+                <image src="{{item.imgpath}}"  style="width:100%;height:100%" />
+              </view>
+              <view  class="category-font">{{item.title}}</view>
+            </view>
+          </block>
         </view>
-      </block>
-    </view>
-  </block>
+      </swiper-item>
+    </block>
+  </swiper>
+  
 
   <!-- <view class="category-top "  style="flex-direction:row;display: flex;margin-top:30rpx;justify-content:space-around">
         <view   >
