@@ -3,11 +3,46 @@
 
   <!-- 列表开始 -->
   <view class="other_list">
-    <view style='width:48%;background:#FFFBE6;'>
-      <view style="height:480rpx;">
-       
-      </view>
+    <!-- <view style='width:350rpx;height:400rpx;border:1px solid gray'>
+      
     </view>
-    <view style='width:48%;height:200rpx;background:#FFFBE6;'></view>
+    <view style='width:350rpx;height:400rpx;border:1px solid gray'>
+      
+    </view> -->
+
   </view>
+<view class='productSort flex'>
+  <view class='productSort-list '>
+    <navigator url="/pages/index/index" hover-class="none"  bindtap='details'>
+          <image src='../public/images/list/1.jpg' class='list-images '></image>
+    </navigator>
+  <view>
+  <view class='list-text '>1212</view>
+      <view class='list-money flex'>
+          <view>
+            <view class='list-num '>已售12</view>
+            <view class='money-red'><text class='list-f'>￥</text><text class='money-num'>121221</text><text class='list-oo'></text><text class='list-tip'>精</text></view>
+          </view>
+            
+          </view>
+      </view>
+  </view>
+
+  <view class='productSort-list '>
+    <navigator url="/pages/index/index" hover-class="none"    bindtap='details'>
+          <image src='../public/images/list/1.jpg' class='list-images '></image>
+    </navigator>
+  <view>
+  <view class='list-text '>1212</view>
+      <view class='list-money flex'>
+          <view>
+            <view class='list-num '>已售12</view>
+            <view class='money-red'><text class='list-f'>￥</text><text class='money-num'>121221</text><text class='list-oo'></text><text class='list-tip'>精</text></view>
+          </view>
+            
+          </view>
+      </view>
+  </view>
+</view>
+   
 </template>
