@@ -1,7 +1,7 @@
 @import "navbar.wxss";
 @import "./hot-banner-template/banner.wxss";
 @import "./other-list-template/other_list.wxss";
-/* @import "./hot-category-template/category.wxss"; */
+@import "./hot-category-template/category.wxss"; 
 .container{
   padding:0px;
   margin-top:86rpx;

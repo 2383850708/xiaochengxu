@@ -1,5 +1,5 @@
 <template name="other_list">
-  <view class="advertisement">广告为</view>
+  <view class="advertisement">广告位</view>
 
   <!-- 列表开始 -->
   <view class="other_list">
