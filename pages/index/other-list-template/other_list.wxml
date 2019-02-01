@@ -3,15 +3,19 @@
 
   <!-- 列表开始 -->
   <view class="other_list">
-    <!-- <view style='width:350rpx;height:400rpx;border:1px solid gray'>
+    <view style='width:360rpx;height:512rpx;border:1px solid gray'>
+      <navigator url="/pages/index/index" hover-class="none"  bindtap='details'>
+          <image src='../public/images/list/1.jpg' class='list-images '></image>
+      </navigator>
+      <view class='list-text'></view>
+    </view>
+
+    <view style='width:360rpx;height:512rpx;border:1px solid gray'>
       
     </view>
-    <view style='width:350rpx;height:400rpx;border:1px solid gray'>
-      
-    </view> -->
 
   </view>
-<view class='productSort flex'>
+<!-- <view class='productSort flex'>
   <view class='productSort-list '>
     <navigator url="/pages/index/index" hover-class="none"  bindtap='details'>
           <image src='../public/images/list/1.jpg' class='list-images '></image>
@@ -43,6 +47,6 @@
           </view>
       </view>
   </view>
-</view>
+</view> -->
    
 </template>
