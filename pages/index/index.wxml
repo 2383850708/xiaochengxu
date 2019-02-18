@@ -1,6 +1,6 @@
 <!-- 导航开始 -->
 <!-- {{index>4?'border-bottom: 1rpx dotted #ddd;':''}} -->
-<scroll-view scroll-x="true" class="navbar" >
+<!-- <scroll-view scroll-x="true" class="navbar" >
   <view class="tab">
     <view class="tab-nav" style='font-size:24rpx'>
       <view  wx:for="{{tabnav.tabitem}}" bindtap="setTab"  class="item {{currentTab==index ? 'active' : ''}}"  data-tabindex="{{index}}" style="">{{item.text}}</view>
@@ -9,7 +9,7 @@
       </view>
     </view>
   </view>
-</scroll-view>
+</scroll-view> -->
 <!-- 导航结束 -->
 
 <view class="two container" style="display:{{hidden_two}}" >

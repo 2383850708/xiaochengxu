@@ -3,15 +3,30 @@
 
   <!-- 列表开始 -->
   <view class="other_list">
-    <view style='width:360rpx;height:512rpx;border:1px solid gray'>
+    <view style='width:367rpx;background:white'>
       <navigator url="/pages/index/index" hover-class="none"  bindtap='details'>
           <image src='../public/images/list/1.jpg' class='list-images '></image>
       </navigator>
-      <view class='list-text'></view>
+      <view class='list-text'>花花公子贵宾裤子男加绒冬季修身直筒牛仔库男加厚商务</view>
+
+      <view class="other_list_pice">
+        <view class="flex-item" style="width:30rpx;font-size:28rpx;padding-top:5rpx;padding-left:25rpx;padding-right:0rpx">￥</view>
+        <view class="flex-item" style="font-weight:bold">395</view>
+        <view class="other_list_num">已售123件</view>
+      </view>
     </view>
 
-    <view style='width:360rpx;height:512rpx;border:1px solid gray'>
-      
+    <view style='width:367rpx;background:white'>
+      <navigator url="/pages/index/index" hover-class="none"  bindtap='details'>
+          <image src='../public/images/list/1.jpg' class='list-images '></image>
+      </navigator>
+      <view class='list-text'>花花公子贵宾裤子男加绒冬季修身直筒牛仔库男加厚商务</view>
+
+      <view class="other_list_pice">
+        <view class="flex-item" style="width:30rpx;font-size:28rpx;padding-top:5rpx;padding-left:10rpx;">￥</view>
+        <view class="flex-item" style="">395</view>
+        <view class="other_list_num">已售123件</view>
+      </view>
     </view>
 
   </view>
